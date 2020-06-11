@@ -1,7 +1,7 @@
 {
-  "name": "tutorial-webdriverio-visualgrid",
+  "name": "tutorial-protractor-ultrafastgrid",
   "version": "1.0.0",
-  "description": "WebdriverIO Applitools Visual Grid example",
+  "description": "Protractor Applitools Visual Grid example",
   "main": "index.js",
   "scripts": {
     "test": "protractor protractor.conf.js"
