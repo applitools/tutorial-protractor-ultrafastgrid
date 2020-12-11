@@ -9,7 +9,8 @@ const {
     BatchInfo,
     BrowserType,
     DeviceName,
-    ScreenOrientation
+    ScreenOrientation,
+    RunnerOptions
 } = require('@applitools/eyes-protractor');
 
 let eyes;
@@ -21,7 +22,8 @@ describe('protractor', function () {
         browser.waitForAngularEnabled(false)
 
         // Create a runner with concurrency of 1
-        runner = new VisualGridRunner(1);
+        const runnerOptions = new RunnerOptions().testConcurrency(1)
+        runner = new VisualGridRunner(runnerOptions);
 
         // Create Eyes object with the runner, meaning it'll be a Visual Grid eyes.
         eyes = new Eyes(runner);
