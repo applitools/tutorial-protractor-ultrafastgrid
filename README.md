@@ -1,4 +1,6 @@
-### Pre-requisites
+## Applitools Tutorial - Protractor Ultrafast Grid
+
+## Pre-requisites
 
 1. Install Node.js from [here](https://nodejs.org/en/)
 2. Run the ChromeDriver that's bundled with with tutorial:
@@ -9,7 +11,7 @@
    * https://stackoverflow.com/questions/38081021/using-selenium-on-mac-chrome
    * https://www.youtube.com/watch?time_continue=182&v=dz59GsdvUF8  
 
-### Running the example
+## Run the Example Project
 
 1. Download the example
     * Option 1: `git clone https://github.com/applitools/tutorial-protractor-ultrafastgrid.git`
@@ -20,7 +22,7 @@
 4. run `npm install`
 5. run `npm test`
 
-### Adding to an existing Node.js example
+### Add Applitools Eyes to an Existing Node.js Project
 
 ```sh
 npm install "@applitools/eyes-protractor" --save-dev
