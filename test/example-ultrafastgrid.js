@@ -22,7 +22,7 @@ describe('protractor', function () {
         browser.waitForAngularEnabled(false)
 
         // Create a runner with concurrency of 1
-        const runnerOptions = new RunnerOptions().testConcurrency(1)
+        const runnerOptions = new RunnerOptions().testConcurrency(5)
         runner = new VisualGridRunner(runnerOptions);
 
         // Create Eyes object with the runner, meaning it'll be a Visual Grid eyes.
@@ -62,7 +62,7 @@ describe('protractor', function () {
         await browser.get('https://demo.applitools.com');
 
         // Call Open on eyes to initialize a test session
-        await eyes.open(browser, 'Demo App', 'Ultrafast grid demo', new RectangleSize(800, 600));
+        await eyes.open(browser, 'Demo App - Protractor', 'Ultrafast grid demo', new RectangleSize(800, 600));
 
         // check the login page with fluent api, see more info here
         // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
@@ -80,11 +80,11 @@ describe('protractor', function () {
 
     afterAll(async () => {
         // If the test was aborted before eyes.close was called, ends the test as aborted.
-        await eyes.abortIfNotClosed();
+        await eyes.abort();
 
         // we pass false to this method to suppress the exception that is thrown if we
         // find visual differences
-        const results = await runner.getAllTestResults(false);
+        const results = await runner.getAllTestResults();
         console.log(results);
     });
 

@@ -9,8 +9,7 @@
   "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
   "license": "ISC",
   "dependencies": {
-    "@applitools/eyes-protractor": "latest",
-    "chromedriver": "latest",
+    "@applitools/eyes-protractor": "1.16.0",
     "mocha": "^6.2.2",
     "protractor": "^7.0.0"
   }
