@@ -35,7 +35,7 @@ describe('protractor', function () {
         // configuration.setApiKey('APPLITOOLS_API_KEY')
 
         // create a new batch info instance and set it to the configuration
-        configuration.setBatch(new BatchInfo('Ultrafast Batch'))
+        configuration.setBatch(new BatchInfo('Demo Batch - Protractor - Ultrafast'))
 
         // Add browsers with different viewports
         configuration.addBrowser(800, 600, BrowserType.CHROME);
@@ -62,7 +62,7 @@ describe('protractor', function () {
         await browser.get('https://demo.applitools.com');
 
         // Call Open on eyes to initialize a test session
-        await eyes.open(browser, 'Demo App - Protractor', 'Ultrafast grid demo', new RectangleSize(800, 600));
+        await eyes.open(browser, 'Demo App - Protractor - Ultrafast', 'Smoke Test - Protractor - Ultrafast', new RectangleSize(800, 600));
 
         // check the login page with fluent api, see more info here
         // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
