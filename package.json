@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@applitools/eyes-protractor": "^1.17.3",
+    "chromedriver": "^97.0.0",
     "mocha": "^6.2.3",
     "protractor": "^7.0.0"
   }
