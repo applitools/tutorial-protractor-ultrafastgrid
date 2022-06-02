@@ -13,5 +13,8 @@
     "chromedriver": "^97.0.0",
     "mocha": "^6.2.3",
     "protractor": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=12.13.0"
   }
 }
